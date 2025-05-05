@@ -1,0 +1,188 @@
+@prefix : <http://www.semanticweb.org/hp/ontologies/2025/3/capstone/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/hp/ontologies/2025/3/capstone/> .
+
+<http://www.semanticweb.org/hp/ontologies/2025/3/capstone> rdf:type owl:Ontology ;
+                                                            rdfs:comment "this is anology about capstone project"@en .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/hp/ontologies/2025/3/capstone#hasDesignDocument
+:hasDesignDocument rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Documentation ;
+                   rdfs:range :Design_Document .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/3/capstone#hasDocumentation
+:hasDocumentation rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Capstone_project ;
+                  rdfs:range :Documentation .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/3/capstone#hasFinalPropsal
+:hasFinalPropsal rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Proposal ;
+                 rdfs:range :Final_Proposal .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/3/capstone#hasFinalReportDocument
+:hasFinalReportDocument rdf:type owl:ObjectProperty ;
+                        rdfs:domain :Documentation ;
+                        rdfs:range :FinalReport_Document .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/3/capstone#hasInitialProposal
+:hasInitialProposal rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Proposal ;
+                    rdfs:range :intial_proposal .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/3/capstone#hasInnovationCriteria
+:hasInnovationCriteria rdf:type owl:ObjectProperty ;
+                       rdfs:domain :Evaluation_Criteria ;
+                       rdfs:range :Innovation_Criteria .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/3/capstone#hasPresentationCriteria
+:hasPresentationCriteria rdf:type owl:ObjectProperty ;
+                         rdfs:domain :Evaluation_Criteria ;
+                         rdfs:range :Presentation_Criteria .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/3/capstone#hasSRSDocument
+:hasSRSDocument rdf:type owl:ObjectProperty ;
+                rdfs:domain :Documentation ;
+                rdfs:range :SRS_Document .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/3/capstone#hasStakeholder
+:hasStakeholder rdf:type owl:ObjectProperty ;
+                rdfs:domain :Capstone_project ;
+                rdfs:range :Stakeholder .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/3/capstone#has_EvaluationCriteria
+:has_EvaluationCriteria rdf:type owl:ObjectProperty ;
+                        rdfs:domain :Capstone_project ;
+                        rdfs:range :Evaluation_Criteria .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/3/capstone#has_Evaluator
+:has_Evaluator rdf:type owl:ObjectProperty ;
+               rdfs:domain :Capstone_project ;
+               rdfs:range :Evalutor .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/3/capstone#has_Proposal
+:has_Proposal rdf:type owl:ObjectProperty ;
+              rdfs:domain :Proposal ;
+              rdfs:range :Capstone_project .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/3/capstone#has_Student
+:has_Student rdf:type owl:ObjectProperty ;
+             rdfs:domain :Capstone_project ;
+             rdfs:range :Students .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/3/capstone#has_Supervisor
+:has_Supervisor rdf:type owl:ObjectProperty ;
+                rdfs:domain :Capstone_project ;
+                rdfs:range :Supervisor .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/3/capstone#has_TechnicalCriteria
+:has_TechnicalCriteria rdf:type owl:ObjectProperty ;
+                       rdfs:domain :Evaluation_Criteria ;
+                       rdfs:range :Technical_Criteria .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/hp/ontologies/2025/3/capstone#Capstone_project
+:Capstone_project rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/3/capstone#Design_Document
+:Design_Document rdf:type owl:Class ;
+                 rdfs:subClassOf :Documentation .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/3/capstone#Documentation
+:Documentation rdf:type owl:Class ;
+               rdfs:subClassOf :Capstone_project .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/3/capstone#Evaluation_Criteria
+:Evaluation_Criteria rdf:type owl:Class ;
+                     rdfs:subClassOf :Capstone_project .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/3/capstone#Evalutor
+:Evalutor rdf:type owl:Class ;
+          rdfs:subClassOf :Stakeholder .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/3/capstone#FinalReport_Document
+:FinalReport_Document rdf:type owl:Class ;
+                      rdfs:subClassOf :Documentation .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/3/capstone#Final_Proposal
+:Final_Proposal rdf:type owl:Class ;
+                rdfs:subClassOf :Proposal .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/3/capstone#Innovation_Criteria
+:Innovation_Criteria rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/3/capstone#Presentation_Criteria
+:Presentation_Criteria rdf:type owl:Class ;
+                       rdfs:subClassOf :Evaluation_Criteria .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/3/capstone#Proposal
+:Proposal rdf:type owl:Class ;
+          rdfs:subClassOf :Capstone_project .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/3/capstone#SRS_Document
+:SRS_Document rdf:type owl:Class ;
+              rdfs:subClassOf :Documentation .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/3/capstone#Stakeholder
+:Stakeholder rdf:type owl:Class ;
+             rdfs:subClassOf :Capstone_project .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/3/capstone#Students
+:Students rdf:type owl:Class ;
+          rdfs:subClassOf :Stakeholder .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/3/capstone#Supervisor
+:Supervisor rdf:type owl:Class ;
+            rdfs:subClassOf :Stakeholder .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/3/capstone#Technical_Criteria
+:Technical_Criteria rdf:type owl:Class ;
+                    rdfs:subClassOf :Evaluation_Criteria .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/3/capstone#intial_proposal
+:intial_proposal rdf:type owl:Class ;
+                 rdfs:subClassOf :Proposal .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
