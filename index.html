@@ -1,0 +1,2084 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="/lode/owl.css" rel="stylesheet" type="text/css">
+    <link href="/lode/Primer.css" rel="stylesheet" type="text/css">
+    <link href="/lode/rec.css" rel="stylesheet" type="text/css">
+    <link href="/lode/extra.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="/lode/favicon.ico">
+    <script src="/lode/jquery.js"></script>
+    <script src="/lode/jquery.scrollTo.js"></script>
+    <script src="/lode/marked.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Convert markdown to HTML
+            jQuery(".markdown").each(function () {
+                var markdownText = jQuery(this).text();
+                jQuery(this).after(marked(markdownText));
+                jQuery(this).remove();
+            });
+    
+            // Scroll to specific anchor by name
+            var list = $('a[name="https://raw.githubusercontent.com/sobia-zafar123/Ontology1_FYP-process.rdf/refs/heads/main/fypontology.rdf"]');
+            
+            if (list.length !== 0) {
+                var element = list.first();
+                $.scrollTo(element);
+            }
+        });
+    </script>
+    
+    <style id="__web-inspector-hide-shortcut-style__">
+        .__web-inspector-hide-shortcut__,
+        .__web-inspector-hide-shortcut__ *,
+        .__web-inspector-hidebefore-shortcut__::before,
+        .__web-inspector-hideafter-shortcut__::after {
+            visibility: hidden !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <dl>
+            <dt>IRI:</dt>
+            <dd>http://www.semanticweb.org/hp/ontologies/2025/3/capstone</dd>
+        </dl>
+        <dl>
+            <dt>Other visualisation
+                :
+            </dt>
+            <dd><a
+                    href="/lode/source?url=https://raw.githubusercontent.com/sobia-zafar123/Ontology1_FYP-process.rdf/refs/heads/main/fypontology.rdf">Ontology
+                    source</a>
+                -
+                <a
+                    href="https://service.tib.eu/webvowl/#iri=https://raw.githubusercontent.com/sobia-zafar123/Ontology1_FYP-process.rdf/refs/heads/main/fypontology.rdf">WebVowl</a>
+            </dd>
+        </dl>
+    </div>
+    <hr>
+    <h2>Abstract</h2><span class="markdown">this is anology about capstone project</span>
+    <div id="toc">
+        <h2>Table of Content</h2>
+        <ol>
+            <li><a href="#classes">Classes</a></li>
+            <li><a href="#objectproperties">Object Properties</a></li>
+            <li><a href="#dataproperties">Data Properties</a></li>
+            <li><a href="#namespacedeclarations">Namespace Declarations</a></li>
+        </ol>
+    </div>
+    <div id="classes">
+        <h2>Classes</h2>
+        <ul class="hlist">
+            <li><a href="#d4e516" title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/AI_Domain"><span>a i
+                        domain</span></a></li>
+            <li><a href="#d4e523"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Capstone_project"><span>capstone
+                        project</span></a></li>
+            <li><a href="#d4e593"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Database"><span>database</span></a>
+            </li>
+            <li><a href="#d4e600"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Design_Document"><span>design
+                        document</span></a></li>
+            <li><a href="#d4e607"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Documentation"><span>documentation</span></a>
+            </li>
+            <li><a href="#d4e615"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Draft_Report"><span>draft
+                        report</span></a></li>
+            <li><a href="#d4e622"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Evaluation_Criteria"><span>evaluation
+                        criteria</span></a></li>
+            <li><a href="#d4e629"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Evalutor"><span>evalutor</span></a>
+            </li>
+            <li><a href="#d4e644"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Final_Demo"><span>final
+                        demo</span></a></li>
+            <li><a href="#d4e651"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Final_Presentation"><span>final
+                        presentation</span></a></li>
+            <li><a href="#d4e689"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Final_Proposal"><span>final
+                        proposal</span></a></li>
+            <li><a href="#d4e696"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Final_Report"><span>final
+                        report</span></a></li>
+            <li><a href="#d4e637"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/FinalReport_Document"><span>final
+                        report document</span></a></li>
+            <li><a href="#d4e703"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Final_VivaPresentation"><span>final
+                        viva presentation</span></a></li>
+            <li><a href="#d4e711"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Framework"><span>framework</span></a>
+            </li>
+            <li><a href="#d4e718"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Gantt_Chart"><span>gantt
+                        chart</span></a></li>
+            <li><a href="#d4e725"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Hardware_Tool"><span>hardware
+                        tool</span></a></li>
+            <li><a href="#d4e1025"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/intial_proposal"><span>intial
+                        proposal</span></a></li>
+            <li><a href="#d4e737"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Mid_Presentation"><span>mid
+                        presentation</span></a></li>
+            <li><a href="#d4e744"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Milestone"><span>milestone</span></a>
+            </li>
+            <li><a href="#d4e782"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Presentation_Criteria"><span>presentation
+                        criteria</span></a></li>
+            <li><a href="#d4e789"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Programming_Language"><span>programming
+                        language</span></a></li>
+            <li><a href="#d4e796"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Project_Domain"><span>project
+                        domain</span></a></li>
+            <li><a href="#d4e824"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Project_Report"><span>project
+                        report</span></a></li>
+            <li><a href="#d4e859"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Proposal"><span>proposal</span></a>
+            </li>
+            <li><a href="#d4e876"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Proposal_Submission"><span>proposal
+                        submission</span></a></li>
+            <li><a href="#d4e884"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Report_Subimission"><span>report
+                        subimission</span></a></li>
+            <li><a href="#d4e891"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/SRS_Completion"><span>s r s
+                        completion</span></a></li>
+            <li><a href="#d4e898" title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/SRS_Document"><span>s
+                        r s document</span></a></li>
+            <li><a href="#d4e906"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Stakeholder"><span>stakeholder</span></a>
+            </li>
+            <li><a href="#d4e913"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Students"><span>students</span></a>
+            </li>
+            <li><a href="#d4e920"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Supervisor"><span>supervisor</span></a>
+            </li>
+            <li><a href="#d4e928"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Technical_Criteria"><span>technical
+                        criteria</span></a></li>
+            <li><a href="#d4e935"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Technology_Used"><span>technology
+                        used</span></a></li>
+            <li><a href="#d4e972"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Timeline"><span>timeline</span></a>
+            </li>
+            <li><a href="#d4e1011"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Web_Development"><span>web
+                        development</span></a></li>
+            <li><a href="#d4e1018"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Weekly_Plan"><span>weekly
+                        plan</span></a></li>
+        </ul>
+        <div id="d4e516" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/AI_Domain"></a>
+            <h3>a i domain<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/AI_Domain</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><a href="#d4e796"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Project_Domain">project
+                        domain</a><sup title="class" class="type-c">c</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e523" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Capstone_project"></a>
+            <h3>capstone project<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Capstone_project</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><a href="#d4e23"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasDocumentation">has
+                        documentation</a><sup title="object property" class="type-op">op</sup> <span
+                        class="logic">some</span> <a href="#d4e607"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Documentation">documentation</a><sup
+                        title="class" class="type-c">c</sup></dd>
+                <dd><a href="#d4e88" title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasStakeholder">has
+                        stakeholder</a><sup title="object property" class="type-op">op</sup> <span
+                        class="logic">some</span> <a href="#d4e906"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Stakeholder">stakeholder</a><sup
+                        title="class" class="type-c">c</sup></dd>
+                <dd><a href="#d4e97" title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Domain">has
+                        domain</a><sup title="object property" class="type-op">op</sup> <span class="logic">some</span>
+                    <a href="#d4e796"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Project_Domain">project
+                        domain</a><sup title="class" class="type-c">c</sup></dd>
+                <dd><a href="#d4e200"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/uses_Technology">uses
+                        technology</a><sup title="object property" class="type-op">op</sup> <span
+                        class="logic">some</span> <a href="#d4e935"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Technology_Used">technology
+                        used</a><sup title="class" class="type-c">c</sup></dd>
+                <dd><a href="#d4e144" title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Proposal">has
+                        proposal</a><sup title="object property" class="type-op">op</sup> <span
+                        class="logic">only</span> <a href="#d4e859"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Proposal">proposal</a><sup
+                        title="class" class="type-c">c</sup></dd>
+                <dd><a href="#d4e191" title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Timeline">has
+                        timeline</a><sup title="object property" class="type-op">op</sup> <span
+                        class="logic">exactly</span> 1 <a href="#d4e972"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Timeline">timeline</a><sup
+                        title="class" class="type-c">c</sup></dd>
+                <dt>has sub-classes</dt>
+                <dd><a href="#d4e607"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Documentation">documentation</a><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e622"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Evaluation_Criteria">evaluation
+                        criteria</a><sup title="class" class="type-c">c</sup>, <a href="#d4e651"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Final_Presentation">final
+                        presentation</a><sup title="class" class="type-c">c</sup>, <a href="#d4e744"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Milestone">milestone</a><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e796"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Project_Domain">project
+                        domain</a><sup title="class" class="type-c">c</sup>, <a href="#d4e859"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Proposal">proposal</a><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e906"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Stakeholder">stakeholder</a><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e935"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Technology_Used">technology
+                        used</a><sup title="class" class="type-c">c</sup></dd>
+                <dt>is in domain of</dt>
+                <dd><a href="#d4e23"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasDocumentation">has
+                        documentation</a><sup title="object property" class="type-op">op</sup>, <a href="#d4e97"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Domain">has domain</a><sup
+                        title="object property" class="type-op">op</sup>, <a href="#d4e107"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_EvaluationCriteria">has
+                        evaluation criteria</a><sup title="object property" class="type-op">op</sup>, <a href="#d4e116"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Evaluator">has
+                        evaluator</a><sup title="object property" class="type-op">op</sup>, <a href="#d4e135"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Presentation">has
+                        presentation</a><sup title="object property" class="type-op">op</sup>, <a href="#d4e144"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Proposal">has
+                        proposal</a><sup title="object property" class="type-op">op</sup>, <a href="#d4e153"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Report">has report</a><sup
+                        title="object property" class="type-op">op</sup>, <a href="#d4e88"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasStakeholder">has
+                        stakeholder</a><sup title="object property" class="type-op">op</sup>, <a href="#d4e163"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Student">has student</a><sup
+                        title="object property" class="type-op">op</sup>, <a href="#d4e172"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Supervisor">has
+                        supervisor</a><sup title="object property" class="type-op">op</sup>, <a href="#d4e191"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Timeline">has
+                        timeline</a><sup title="object property" class="type-op">op</sup>, <a href="#d4e323"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/projectDescription">project
+                        description</a><sup title="data property" class="type-dp">dp</sup>, <a href="#d4e333"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/projectEndDate">project end
+                        date</a><sup title="data property" class="type-dp">dp</sup>, <a href="#d4e342"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/projectStartDate">project start
+                        date</a><sup title="data property" class="type-dp">dp</sup>, <a href="#d4e351"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/projectTitle">project
+                        title</a><sup title="data property" class="type-dp">dp</sup>, <a href="#d4e200"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/uses_Technology">uses
+                        technology</a><sup title="object property" class="type-op">op</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e593" class="entity"><a name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Database"></a>
+            <h3>database<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a>
+                    or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Database</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><a href="#d4e935"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Technology_Used">technology
+                        used</a><sup title="class" class="type-c">c</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e600" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Design_Document"></a>
+            <h3>design document<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Design_Document</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><a href="#d4e607"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Documentation">documentation</a><sup
+                        title="class" class="type-c">c</sup></dd>
+                <dt>is in range of</dt>
+                <dd><a href="#d4e13"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasDesignDocument">has design
+                        document</a><sup title="object property" class="type-op">op</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e607" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Documentation"></a>
+            <h3>documentation<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Documentation</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><a href="#d4e523"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Capstone_project">capstone
+                        project</a><sup title="class" class="type-c">c</sup></dd>
+                <dt>has sub-classes</dt>
+                <dd><a href="#d4e600"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Design_Document">design
+                        document</a><sup title="class" class="type-c">c</sup>, <a href="#d4e637"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/FinalReport_Document">final
+                        report document</a><sup title="class" class="type-c">c</sup>, <a href="#d4e898"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/SRS_Document">s r s
+                        document</a><sup title="class" class="type-c">c</sup></dd>
+                <dt>is in domain of</dt>
+                <dd><a href="#d4e211"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/documentName">document
+                        name</a><sup title="data property" class="type-dp">dp</sup>, <a href="#d4e267"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/fileformat">fileformat</a><sup
+                        title="data property" class="type-dp">dp</sup>, <a href="#d4e13"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasDesignDocument">has design
+                        document</a><sup title="object property" class="type-op">op</sup>, <a href="#d4e41"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasFinalReportDocument">has
+                        final report document</a><sup title="object property" class="type-op">op</sup>, <a href="#d4e79"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasSRSDocument">has s r s
+                        document</a><sup title="object property" class="type-op">op</sup>, <a href="#d4e482"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/uploadDate">upload date</a><sup
+                        title="data property" class="type-dp">dp</sup>, <a href="#d4e503"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/versionNumber">version
+                        number</a><sup title="data property" class="type-dp">dp</sup></dd>
+                <dt>is in range of</dt>
+                <dd><a href="#d4e23"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasDocumentation">has
+                        documentation</a><sup title="object property" class="type-op">op</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e615" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Draft_Report"></a>
+            <h3>draft report<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Draft_Report</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><a href="#d4e824"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Project_Report">project
+                        report</a><sup title="class" class="type-c">c</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e622" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Evaluation_Criteria"></a>
+            <h3>evaluation criteria<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Evaluation_Criteria</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><a href="#d4e523"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Capstone_project">capstone
+                        project</a><sup title="class" class="type-c">c</sup></dd>
+                <dt>has sub-classes</dt>
+                <dd><a href="#d4e782"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Presentation_Criteria">presentation
+                        criteria</a><sup title="class" class="type-c">c</sup>, <a href="#d4e928"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Technical_Criteria">technical
+                        criteria</a><sup title="class" class="type-c">c</sup></dd>
+                <dt>is in domain of</dt>
+                <dd><a href="#d4e249"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/evaluationScore">evaluation
+                        score</a><sup title="data property" class="type-dp">dp</sup>, <a href="#d4e60"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasInnovationCriteria">has
+                        innovation criteria</a><sup title="object property" class="type-op">op</sup>, <a href="#d4e69"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasPresentationCriteria">has
+                        presentation criteria</a><sup title="object property" class="type-op">op</sup>, <a
+                        href="#d4e181"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_TechnicalCriteria">has
+                        technical criteria</a><sup title="object property" class="type-op">op</sup>, <a href="#d4e379"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/remarks">remarks</a><sup
+                        title="data property" class="type-dp">dp</sup></dd>
+                <dt>is in range of</dt>
+                <dd><a href="#d4e107"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_EvaluationCriteria">has
+                        evaluation criteria</a><sup title="object property" class="type-op">op</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e629" class="entity"><a name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Evalutor"></a>
+            <h3>evalutor<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a>
+                    or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Evalutor</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><a href="#d4e906"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Stakeholder">stakeholder</a><sup
+                        title="class" class="type-c">c</sup></dd>
+                <dt>is in domain of</dt>
+                <dd><a href="#d4e258"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/evaluatorName">evaluator
+                        name</a><sup title="data property" class="type-dp">dp</sup></dd>
+                <dt>is in range of</dt>
+                <dd><a href="#d4e116" title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Evaluator">has
+                        evaluator</a><sup title="object property" class="type-op">op</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e644" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Final_Demo"></a>
+            <h3>final demo<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Final_Demo</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><a href="#d4e744"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Milestone">milestone</a><sup
+                        title="class" class="type-c">c</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e651" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Final_Presentation"></a>
+            <h3>final presentation<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Final_Presentation</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><a href="#d4e523"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Capstone_project">capstone
+                        project</a><sup title="class" class="type-c">c</sup></dd>
+                <dd><a href="#d4e305"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/presentationDate">presentation
+                        date</a><sup title="data property" class="type-dp">dp</sup> <span class="logic">some</span>
+                    <span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span></dd>
+                <dd><a href="#d4e314"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/presenterName">presenter
+                        name</a><sup title="data property" class="type-dp">dp</sup> <span class="logic">some</span>
+                    <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                <dd><a href="#d4e370"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/prsentationScore">prsentation
+                        score</a><sup title="data property" class="type-dp">dp</sup> <span class="logic">some</span>
+                    <span class="dotted" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</span></dd>
+                <dt>has sub-classes</dt>
+                <dd><a href="#d4e703"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Final_VivaPresentation">final
+                        viva presentation</a><sup title="class" class="type-c">c</sup>, <a href="#d4e737"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Mid_Presentation">mid
+                        presentation</a><sup title="class" class="type-c">c</sup></dd>
+                <dt>is in domain of</dt>
+                <dd><a href="#d4e305"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/presentationDate">presentation
+                        date</a><sup title="data property" class="type-dp">dp</sup>, <a href="#d4e314"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/presenterName">presenter
+                        name</a><sup title="data property" class="type-dp">dp</sup>, <a href="#d4e370"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/prsentationScore">prsentation
+                        score</a><sup title="data property" class="type-dp">dp</sup></dd>
+                <dt>is in range of</dt>
+                <dd><a href="#d4e135"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Presentation">has
+                        presentation</a><sup title="object property" class="type-op">op</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e689" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Final_Proposal"></a>
+            <h3>final proposal<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Final_Proposal</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><a href="#d4e859"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Proposal">proposal</a><sup
+                        title="class" class="type-c">c</sup></dd>
+                <dt>is in range of</dt>
+                <dd><a href="#d4e32"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasFinalPropsal">has final
+                        propsal</a><sup title="object property" class="type-op">op</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e696" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Final_Report"></a>
+            <h3>final report<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Final_Report</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><a href="#d4e824"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Project_Report">project
+                        report</a><sup title="class" class="type-c">c</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e637" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/FinalReport_Document"></a>
+            <h3>final report document<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/FinalReport_Document</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><a href="#d4e607"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Documentation">documentation</a><sup
+                        title="class" class="type-c">c</sup></dd>
+                <dt>is in range of</dt>
+                <dd><a href="#d4e41"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasFinalReportDocument">has
+                        final report document</a><sup title="object property" class="type-op">op</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e703" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Final_VivaPresentation"></a>
+            <h3>final viva presentation<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Final_VivaPresentation</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><a href="#d4e651"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Final_Presentation">final
+                        presentation</a><sup title="class" class="type-c">c</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e711" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Framework"></a>
+            <h3>framework<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a>
+                    or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Framework</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><a href="#d4e935"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Technology_Used">technology
+                        used</a><sup title="class" class="type-c">c</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e718" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Gantt_Chart"></a>
+            <h3>gantt chart<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Gantt_Chart</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><a href="#d4e972"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Timeline">timeline</a><sup
+                        title="class" class="type-c">c</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e725" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Hardware_Tool"></a>
+            <h3>hardware tool<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Hardware_Tool</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><a href="#d4e935"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Technology_Used">technology
+                        used</a><sup title="class" class="type-c">c</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e1025" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/intial_proposal"></a>
+            <h3>intial proposal<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/intial_proposal</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><a href="#d4e859"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Proposal">proposal</a><sup
+                        title="class" class="type-c">c</sup></dd>
+                <dt>is in range of</dt>
+                <dd><a href="#d4e51"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasInitialProposal">has initial
+                        proposal</a><sup title="object property" class="type-op">op</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e737" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Mid_Presentation"></a>
+            <h3>mid presentation<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Mid_Presentation</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><a href="#d4e651"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Final_Presentation">final
+                        presentation</a><sup title="class" class="type-c">c</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e744" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Milestone"></a>
+            <h3>milestone<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a>
+                    or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Milestone</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><a href="#d4e523"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Capstone_project">capstone
+                        project</a><sup title="class" class="type-c">c</sup></dd>
+                <dd><a href="#d4e277"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/milestoneDate">milestone
+                        date</a><sup title="data property" class="type-dp">dp</sup> <span class="logic">some</span>
+                    <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                <dd><a href="#d4e286"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/milestoneStatus">milestone
+                        status</a><sup title="data property" class="type-dp">dp</sup> <span class="logic">some</span>
+                    <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                <dd><a href="#d4e295"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/milestoneTitle">milestone
+                        title</a><sup title="data property" class="type-dp">dp</sup> <span class="logic">some</span>
+                    <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                <dt>has sub-classes</dt>
+                <dd><a href="#d4e644" title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Final_Demo">final
+                        demo</a><sup title="class" class="type-c">c</sup>, <a href="#d4e876"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Proposal_Submission">proposal
+                        submission</a><sup title="class" class="type-c">c</sup>, <a href="#d4e884"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Report_Subimission">report
+                        subimission</a><sup title="class" class="type-c">c</sup>, <a href="#d4e891"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/SRS_Completion">s r s
+                        completion</a><sup title="class" class="type-c">c</sup></dd>
+                <dt>is in domain of</dt>
+                <dd><a href="#d4e277"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/milestoneDate">milestone
+                        date</a><sup title="data property" class="type-dp">dp</sup>, <a href="#d4e286"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/milestoneStatus">milestone
+                        status</a><sup title="data property" class="type-dp">dp</sup>, <a href="#d4e295"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/milestoneTitle">milestone
+                        title</a><sup title="data property" class="type-dp">dp</sup></dd>
+                <dt>is in range of</dt>
+                <dd><a href="#d4e125" title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Milestone">has
+                        milestone</a><sup title="object property" class="type-op">op</sup>, <a href="#d4e191"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Timeline">has
+                        timeline</a><sup title="object property" class="type-op">op</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e782" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Presentation_Criteria"></a>
+            <h3>presentation criteria<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Presentation_Criteria</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><a href="#d4e622"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Evaluation_Criteria">evaluation
+                        criteria</a><sup title="class" class="type-c">c</sup></dd>
+                <dt>is in range of</dt>
+                <dd><a href="#d4e69"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasPresentationCriteria">has
+                        presentation criteria</a><sup title="object property" class="type-op">op</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e789" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Programming_Language"></a>
+            <h3>programming language<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Programming_Language</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><a href="#d4e935"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Technology_Used">technology
+                        used</a><sup title="class" class="type-c">c</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e796" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Project_Domain"></a>
+            <h3>project domain<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Project_Domain</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><a href="#d4e523"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Capstone_project">capstone
+                        project</a><sup title="class" class="type-c">c</sup></dd>
+                <dd><a href="#d4e221"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/domainDescription">domain
+                        description</a><sup title="data property" class="type-dp">dp</sup> <span
+                        class="logic">some</span> <span class="dotted"
+                        title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                <dd><a href="#d4e230" title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/domainName">domain
+                        name</a><sup title="data property" class="type-dp">dp</sup> <span class="logic">some</span>
+                    <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                <dt>has sub-classes</dt>
+                <dd><a href="#d4e516" title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/AI_Domain">a i
+                        domain</a><sup title="class" class="type-c">c</sup>, <a href="#d4e1011"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Web_Development">web
+                        development</a><sup title="class" class="type-c">c</sup></dd>
+                <dt>is in domain of</dt>
+                <dd><a href="#d4e221"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/domainDescription">domain
+                        description</a><sup title="data property" class="type-dp">dp</sup>, <a href="#d4e230"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/domainName">domain name</a><sup
+                        title="data property" class="type-dp">dp</sup></dd>
+                <dt>is in range of</dt>
+                <dd><a href="#d4e97" title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Domain">has
+                        domain</a><sup title="object property" class="type-op">op</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e824" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Project_Report"></a>
+            <h3>project report<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Project_Report</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><a href="#d4e389" title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/reportDate">report
+                        date</a><sup title="data property" class="type-dp">dp</sup> <span class="logic">some</span>
+                    <span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span></dd>
+                <dd><a href="#d4e398"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/reportTitle">report
+                        title</a><sup title="data property" class="type-dp">dp</sup> <span class="logic">some</span>
+                    <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                <dd><a href="#d4e407"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/reportVersion">report
+                        version</a><sup title="data property" class="type-dp">dp</sup> <span class="logic">some</span>
+                    <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                <dt>has sub-classes</dt>
+                <dd><a href="#d4e615"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Draft_Report">draft
+                        report</a><sup title="class" class="type-c">c</sup>, <a href="#d4e696"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Final_Report">final
+                        report</a><sup title="class" class="type-c">c</sup></dd>
+                <dt>is in domain of</dt>
+                <dd><a href="#d4e389" title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/reportDate">report
+                        date</a><sup title="data property" class="type-dp">dp</sup>, <a href="#d4e398"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/reportTitle">report
+                        title</a><sup title="data property" class="type-dp">dp</sup>, <a href="#d4e407"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/reportVersion">report
+                        version</a><sup title="data property" class="type-dp">dp</sup></dd>
+                <dt>is in range of</dt>
+                <dd><a href="#d4e153" title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Report">has
+                        report</a><sup title="object property" class="type-op">op</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e859" class="entity"><a name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Proposal"></a>
+            <h3>proposal<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a>
+                    or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Proposal</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><a href="#d4e523"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Capstone_project">capstone
+                        project</a><sup title="class" class="type-c">c</sup></dd>
+                <dd><a href="#d4e361"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/proposalStatus">proposal
+                        status</a><sup title="data property" class="type-dp">dp</sup> <span class="logic">some</span>
+                    <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                <dt>has sub-classes</dt>
+                <dd><a href="#d4e689"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Final_Proposal">final
+                        proposal</a><sup title="class" class="type-c">c</sup>, <a href="#d4e1025"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/intial_proposal">intial
+                        proposal</a><sup title="class" class="type-c">c</sup></dd>
+                <dt>is in domain of</dt>
+                <dd><a href="#d4e32"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasFinalPropsal">has final
+                        propsal</a><sup title="object property" class="type-op">op</sup>, <a href="#d4e51"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasInitialProposal">has initial
+                        proposal</a><sup title="object property" class="type-op">op</sup>, <a href="#d4e361"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/proposalStatus">proposal
+                        status</a><sup title="data property" class="type-dp">dp</sup>, <a href="#d4e445"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/submissionDate">submission
+                        date</a><sup title="data property" class="type-dp">dp</sup></dd>
+                <dt>is in range of</dt>
+                <dd><a href="#d4e144" title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Proposal">has
+                        proposal</a><sup title="object property" class="type-op">op</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e876" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Proposal_Submission"></a>
+            <h3>proposal submission<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Proposal_Submission</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><a href="#d4e744"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Milestone">milestone</a><sup
+                        title="class" class="type-c">c</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e884" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Report_Subimission"></a>
+            <h3>report subimission<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Report_Subimission</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><a href="#d4e744"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Milestone">milestone</a><sup
+                        title="class" class="type-c">c</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e891" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/SRS_Completion"></a>
+            <h3>s r s completion<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/SRS_Completion</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><a href="#d4e744"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Milestone">milestone</a><sup
+                        title="class" class="type-c">c</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e898" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/SRS_Document"></a>
+            <h3>s r s document<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/SRS_Document</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><a href="#d4e607"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Documentation">documentation</a><sup
+                        title="class" class="type-c">c</sup></dd>
+                <dt>is in range of</dt>
+                <dd><a href="#d4e79" title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasSRSDocument">has
+                        s r s document</a><sup title="object property" class="type-op">op</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e906" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Stakeholder"></a>
+            <h3>stakeholder<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Stakeholder</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><a href="#d4e523"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Capstone_project">capstone
+                        project</a><sup title="class" class="type-c">c</sup></dd>
+                <dt>has sub-classes</dt>
+                <dd><a href="#d4e629"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Evalutor">evalutor</a><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e913"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Students">students</a><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e920"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Supervisor">supervisor</a><sup
+                        title="class" class="type-c">c</sup></dd>
+                <dt>is in range of</dt>
+                <dd><a href="#d4e88" title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasStakeholder">has
+                        stakeholder</a><sup title="object property" class="type-op">op</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e913" class="entity"><a name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Students"></a>
+            <h3>students<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a>
+                    or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Students</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><a href="#d4e906"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Stakeholder">stakeholder</a><sup
+                        title="class" class="type-c">c</sup></dd>
+                <dt>is in domain of</dt>
+                <dd><a href="#d4e426" title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/studentID">student
+                        i d</a><sup title="data property" class="type-dp">dp</sup>, <a href="#d4e435"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/studentName">student
+                        name</a><sup title="data property" class="type-dp">dp</sup></dd>
+                <dt>is in range of</dt>
+                <dd><a href="#d4e163" title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Student">has
+                        student</a><sup title="object property" class="type-op">op</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e920" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Supervisor"></a>
+            <h3>supervisor<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Supervisor</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><a href="#d4e906"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Stakeholder">stakeholder</a><sup
+                        title="class" class="type-c">c</sup></dd>
+                <dt>is in domain of</dt>
+                <dd><a href="#d4e454"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/supervisorName">supervisor
+                        name</a><sup title="data property" class="type-dp">dp</sup></dd>
+                <dt>is in range of</dt>
+                <dd><a href="#d4e172"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Supervisor">has
+                        supervisor</a><sup title="object property" class="type-op">op</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e928" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Technical_Criteria"></a>
+            <h3>technical criteria<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Technical_Criteria</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><a href="#d4e622"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Evaluation_Criteria">evaluation
+                        criteria</a><sup title="class" class="type-c">c</sup></dd>
+                <dt>is in range of</dt>
+                <dd><a href="#d4e181"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_TechnicalCriteria">has
+                        technical criteria</a><sup title="object property" class="type-op">op</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e935" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Technology_Used"></a>
+            <h3>technology used<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Technology_Used</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><a href="#d4e523"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Capstone_project">capstone
+                        project</a><sup title="class" class="type-c">c</sup></dd>
+                <dd><a href="#d4e463" title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/techName">tech
+                        name</a><sup title="data property" class="type-dp">dp</sup> <span class="logic">some</span>
+                    <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                <dd><a href="#d4e473" title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/techType">tech
+                        type</a><sup title="data property" class="type-dp">dp</sup> <span class="logic">some</span>
+                    <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                <dd><a href="#d4e503"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/versionNumber">version
+                        number</a><sup title="data property" class="type-dp">dp</sup> <span class="logic">some</span>
+                    <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                <dt>has sub-classes</dt>
+                <dd><a href="#d4e593"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Database">database</a><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e711"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Framework">framework</a><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e725"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Hardware_Tool">hardware
+                        tool</a><sup title="class" class="type-c">c</sup>, <a href="#d4e789"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Programming_Language">programming
+                        language</a><sup title="class" class="type-c">c</sup></dd>
+                <dt>is in domain of</dt>
+                <dd><a href="#d4e463" title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/techName">tech
+                        name</a><sup title="data property" class="type-dp">dp</sup>, <a href="#d4e473"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/techType">tech type</a><sup
+                        title="data property" class="type-dp">dp</sup>, <a href="#d4e491"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/version">version</a><sup
+                        title="data property" class="type-dp">dp</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e972" class="entity"><a name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Timeline"></a>
+            <h3>timeline<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a>
+                    or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Timeline</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><a href="#d4e125" title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Milestone">has
+                        milestone</a><sup title="object property" class="type-op">op</sup> <span
+                        class="logic">min</span> 1 <a href="#d4e744"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Milestone">milestone</a><sup
+                        title="class" class="type-c">c</sup></dd>
+                <dd><a href="#d4e239" title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/endDate">end
+                        date</a><sup title="data property" class="type-dp">dp</sup> <span class="logic">some</span>
+                    <span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span></dd>
+                <dd><a href="#d4e417" title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/startDate">start
+                        date</a><sup title="data property" class="type-dp">dp</sup> <span class="logic">some</span>
+                    <span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span></dd>
+                <dt>has sub-classes</dt>
+                <dd><a href="#d4e718" title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Gantt_Chart">gantt
+                        chart</a><sup title="class" class="type-c">c</sup>, <a href="#d4e1018"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Weekly_Plan">weekly plan</a><sup
+                        title="class" class="type-c">c</sup></dd>
+                <dt>is in domain of</dt>
+                <dd><a href="#d4e239" title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/endDate">end
+                        date</a><sup title="data property" class="type-dp">dp</sup>, <a href="#d4e125"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Milestone">has
+                        milestone</a><sup title="object property" class="type-op">op</sup>, <a href="#d4e417"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/startDate">start date</a><sup
+                        title="data property" class="type-dp">dp</sup></dd>
+                <dt>is in range of</dt>
+                <dd><a href="#d4e200"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/uses_Technology">uses
+                        technology</a><sup title="object property" class="type-op">op</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e1011" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Web_Development"></a>
+            <h3>web development<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Web_Development</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><a href="#d4e796"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Project_Domain">project
+                        domain</a><sup title="class" class="type-c">c</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e1018" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Weekly_Plan"></a>
+            <h3>weekly plan<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Weekly_Plan</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><a href="#d4e972"
+                        title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Timeline">timeline</a><sup
+                        title="class" class="type-c">c</sup></dd>
+            </dl>
+        </div>
+    </div>
+    <div id="objectproperties">
+        <h2>Object Properties</h2>
+        <ul class="hlist">
+            <li><a href="#d4e13"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasDesignDocument"><span>has design
+                        document</span></a></li>
+            <li><a href="#d4e23"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasDocumentation"><span>has
+                        documentation</span></a></li>
+            <li><a href="#d4e97" title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Domain"><span>has
+                        domain</span></a></li>
+            <li><a href="#d4e107"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_EvaluationCriteria"><span>has
+                        evaluation criteria</span></a></li>
+            <li><a href="#d4e116"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Evaluator"><span>has
+                        evaluator</span></a></li>
+            <li><a href="#d4e32"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasFinalPropsal"><span>has final
+                        propsal</span></a></li>
+            <li><a href="#d4e41"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasFinalReportDocument"><span>has
+                        final report document</span></a></li>
+            <li><a href="#d4e51"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasInitialProposal"><span>has
+                        initial proposal</span></a></li>
+            <li><a href="#d4e60"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasInnovationCriteria"><span>has
+                        innovation criteria</span></a></li>
+            <li><a href="#d4e125"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Milestone"><span>has
+                        milestone</span></a></li>
+            <li><a href="#d4e135"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Presentation"><span>has
+                        presentation</span></a></li>
+            <li><a href="#d4e69"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasPresentationCriteria"><span>has
+                        presentation criteria</span></a></li>
+            <li><a href="#d4e144"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Proposal"><span>has
+                        proposal</span></a></li>
+            <li><a href="#d4e153" title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Report"><span>has
+                        report</span></a></li>
+            <li><a href="#d4e79"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasSRSDocument"><span>has s r s
+                        document</span></a></li>
+            <li><a href="#d4e88"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasStakeholder"><span>has
+                        stakeholder</span></a></li>
+            <li><a href="#d4e163" title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Student"><span>has
+                        student</span></a></li>
+            <li><a href="#d4e172"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Supervisor"><span>has
+                        supervisor</span></a></li>
+            <li><a href="#d4e181"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_TechnicalCriteria"><span>has
+                        technical criteria</span></a></li>
+            <li><a href="#d4e191"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Timeline"><span>has
+                        timeline</span></a></li>
+            <li><a href="#d4e200"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/uses_Technology"><span>uses
+                        technology</span></a></li>
+        </ul>
+        <div id="d4e13" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasDesignDocument"></a>
+            <h3>has design document<sup title="object property" class="type-op">op</sup><span class="backlink"> back to
+                    <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasDesignDocument</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e607"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Documentation">documentation</a><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><a href="#d4e600"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Design_Document">design
+                            document</a><sup title="class" class="type-c">c</sup></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e23" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasDocumentation"></a>
+            <h3>has documentation<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasDocumentation</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e523"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Capstone_project">capstone
+                            project</a><sup title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><a href="#d4e607"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Documentation">documentation</a><sup
+                            title="class" class="type-c">c</sup></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e97" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Domain"></a>
+            <h3>has domain<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Domain</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e523"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Capstone_project">capstone
+                            project</a><sup title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><a href="#d4e796"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Project_Domain">project
+                            domain</a><sup title="class" class="type-c">c</sup></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e107" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_EvaluationCriteria"></a>
+            <h3>has evaluation criteria<sup title="object property" class="type-op">op</sup><span class="backlink"> back
+                    to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_EvaluationCriteria</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e523"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Capstone_project">capstone
+                            project</a><sup title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><a href="#d4e622"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Evaluation_Criteria">evaluation
+                            criteria</a><sup title="class" class="type-c">c</sup></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e116" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Evaluator"></a>
+            <h3>has evaluator<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Evaluator</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e523"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Capstone_project">capstone
+                            project</a><sup title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><a href="#d4e629"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Evalutor">evalutor</a><sup
+                            title="class" class="type-c">c</sup></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e32" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasFinalPropsal"></a>
+            <h3>has final propsal<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasFinalPropsal</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e859"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Proposal">proposal</a><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><a href="#d4e689"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Final_Proposal">final
+                            proposal</a><sup title="class" class="type-c">c</sup></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e41" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasFinalReportDocument"></a>
+            <h3>has final report document<sup title="object property" class="type-op">op</sup><span class="backlink">
+                    back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasFinalReportDocument</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e607"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Documentation">documentation</a><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><a href="#d4e637"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/FinalReport_Document">final
+                            report document</a><sup title="class" class="type-c">c</sup></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e51" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasInitialProposal"></a>
+            <h3>has initial proposal<sup title="object property" class="type-op">op</sup><span class="backlink"> back to
+                    <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasInitialProposal</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e859"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Proposal">proposal</a><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><a href="#d4e1025"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/intial_proposal">intial
+                            proposal</a><sup title="class" class="type-c">c</sup></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e60" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasInnovationCriteria"></a>
+            <h3>has innovation criteria<sup title="object property" class="type-op">op</sup><span class="backlink"> back
+                    to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasInnovationCriteria</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e622"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Evaluation_Criteria">evaluation
+                            criteria</a><sup title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Innovation_Criteria">innovation
+                            criteria</span><sup title="class" class="type-c">c</sup></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e125" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Milestone"></a>
+            <h3>has milestone<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Milestone</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e972"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Timeline">timeline</a><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><a href="#d4e744"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Milestone">milestone</a><sup
+                            title="class" class="type-c">c</sup></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e135" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Presentation"></a>
+            <h3>has presentation<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Presentation</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e523"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Capstone_project">capstone
+                            project</a><sup title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><a href="#d4e651"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Final_Presentation">final
+                            presentation</a><sup title="class" class="type-c">c</sup></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e69" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasPresentationCriteria"></a>
+            <h3>has presentation criteria<sup title="object property" class="type-op">op</sup><span class="backlink">
+                    back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasPresentationCriteria
+            </p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e622"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Evaluation_Criteria">evaluation
+                            criteria</a><sup title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><a href="#d4e782"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Presentation_Criteria">presentation
+                            criteria</a><sup title="class" class="type-c">c</sup></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e144" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Proposal"></a>
+            <h3>has proposal<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Proposal</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e523"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Capstone_project">capstone
+                            project</a><sup title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><a href="#d4e859"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Proposal">proposal</a><sup
+                            title="class" class="type-c">c</sup></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e153" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Report"></a>
+            <h3>has report<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Report</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e523"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Capstone_project">capstone
+                            project</a><sup title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><a href="#d4e824"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Project_Report">project
+                            report</a><sup title="class" class="type-c">c</sup></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e79" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasSRSDocument"></a>
+            <h3>has s r s document<sup title="object property" class="type-op">op</sup><span class="backlink"> back to
+                    <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasSRSDocument</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e607"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Documentation">documentation</a><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><a href="#d4e898"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/SRS_Document">s r s
+                            document</a><sup title="class" class="type-c">c</sup></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e88" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasStakeholder"></a>
+            <h3>has stakeholder<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/hasStakeholder</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e523"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Capstone_project">capstone
+                            project</a><sup title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><a href="#d4e906"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Stakeholder">stakeholder</a><sup
+                            title="class" class="type-c">c</sup></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e163" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Student"></a>
+            <h3>has student<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Student</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e523"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Capstone_project">capstone
+                            project</a><sup title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><a href="#d4e913"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Students">students</a><sup
+                            title="class" class="type-c">c</sup></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e172" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Supervisor"></a>
+            <h3>has supervisor<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Supervisor</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e523"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Capstone_project">capstone
+                            project</a><sup title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><a href="#d4e920"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Supervisor">supervisor</a><sup
+                            title="class" class="type-c">c</sup></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e181" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_TechnicalCriteria"></a>
+            <h3>has technical criteria<sup title="object property" class="type-op">op</sup><span class="backlink"> back
+                    to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_TechnicalCriteria</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e622"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Evaluation_Criteria">evaluation
+                            criteria</a><sup title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><a href="#d4e928"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Technical_Criteria">technical
+                            criteria</a><sup title="class" class="type-c">c</sup></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e191" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Timeline"></a>
+            <h3>has timeline<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/has_Timeline</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e523"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Capstone_project">capstone
+                            project</a><sup title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><a href="#d4e744"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Milestone">milestone</a><sup
+                            title="class" class="type-c">c</sup></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e200" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/uses_Technology"></a>
+            <h3>uses technology<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/uses_Technology</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e523"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Capstone_project">capstone
+                            project</a><sup title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><a href="#d4e972"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Timeline">timeline</a><sup
+                            title="class" class="type-c">c</sup></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div id="dataproperties" class="__web-inspector-hide-shortcut__">
+        <h2>Data Properties</h2>
+        <ul class="hlist">
+            <li><a href="#d4e211"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/documentName"><span>document
+                        name</span></a></li>
+            <li><a href="#d4e221"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/domainDescription"><span>domain
+                        description</span></a></li>
+            <li><a href="#d4e230"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/domainName"><span>domain
+                        name</span></a></li>
+            <li><a href="#d4e239" title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/endDate"><span>end
+                        date</span></a></li>
+            <li><a href="#d4e249"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/evaluationScore"><span>evaluation
+                        score</span></a></li>
+            <li><a href="#d4e258"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/evaluatorName"><span>evaluator
+                        name</span></a></li>
+            <li><a href="#d4e267"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/fileformat"><span>fileformat</span></a>
+            </li>
+            <li><a href="#d4e277"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/milestoneDate"><span>milestone
+                        date</span></a></li>
+            <li><a href="#d4e286"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/milestoneStatus"><span>milestone
+                        status</span></a></li>
+            <li><a href="#d4e295"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/milestoneTitle"><span>milestone
+                        title</span></a></li>
+            <li><a href="#d4e305"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/presentationDate"><span>presentation
+                        date</span></a></li>
+            <li><a href="#d4e314"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/presenterName"><span>presenter
+                        name</span></a></li>
+            <li><a href="#d4e323"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/projectDescription"><span>project
+                        description</span></a></li>
+            <li><a href="#d4e333"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/projectEndDate"><span>project end
+                        date</span></a></li>
+            <li><a href="#d4e342"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/projectStartDate"><span>project
+                        start date</span></a></li>
+            <li><a href="#d4e351"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/projectTitle"><span>project
+                        title</span></a></li>
+            <li><a href="#d4e361"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/proposalStatus"><span>proposal
+                        status</span></a></li>
+            <li><a href="#d4e370"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/prsentationScore"><span>prsentation
+                        score</span></a></li>
+            <li><a href="#d4e379"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/remarks"><span>remarks</span></a>
+            </li>
+            <li><a href="#d4e389"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/reportDate"><span>report
+                        date</span></a></li>
+            <li><a href="#d4e398"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/reportTitle"><span>report
+                        title</span></a></li>
+            <li><a href="#d4e407"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/reportVersion"><span>report
+                        version</span></a></li>
+            <li><a href="#d4e417" title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/startDate"><span>start
+                        date</span></a></li>
+            <li><a href="#d4e426"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/studentID"><span>student i
+                        d</span></a></li>
+            <li><a href="#d4e435"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/studentName"><span>student
+                        name</span></a></li>
+            <li><a href="#d4e445"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/submissionDate"><span>submission
+                        date</span></a></li>
+            <li><a href="#d4e454"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/supervisorName"><span>supervisor
+                        name</span></a></li>
+            <li><a href="#d4e463" title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/techName"><span>tech
+                        name</span></a></li>
+            <li><a href="#d4e473" title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/techType"><span>tech
+                        type</span></a></li>
+            <li><a href="#d4e482"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/uploadDate"><span>upload
+                        date</span></a></li>
+            <li><a href="#d4e491"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/version"><span>version</span></a>
+            </li>
+            <li><a href="#d4e503"
+                    title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/versionNumber"><span>version
+                        number</span></a></li>
+        </ul>
+        <div id="d4e211" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/documentName"></a>
+            <h3>document name<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/documentName</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e607"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Documentation">documentation</a><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e221" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/domainDescription"></a>
+            <h3>domain description<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/domainDescription</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e796"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Project_Domain">project
+                            domain</a><sup title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e230" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/domainName"></a>
+            <h3>domain name<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/domainName</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e796"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Project_Domain">project
+                            domain</a><sup title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e239" class="entity"><a name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/endDate"></a>
+            <h3>end date<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/endDate</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e972"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Timeline">timeline</a><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e249" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/evaluationScore"></a>
+            <h3>evaluation score<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/evaluationScore</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e622"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Evaluation_Criteria">evaluation
+                            criteria</a><sup title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e258" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/evaluatorName"></a>
+            <h3>evaluator name<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/evaluatorName</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e629"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Evalutor">evalutor</a><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e267" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/fileformat"></a>
+            <h3>fileformat<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/fileformat</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e607"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Documentation">documentation</a><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e277" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/milestoneDate"></a>
+            <h3>milestone date<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/milestoneDate</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e744"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Milestone">milestone</a><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e286" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/milestoneStatus"></a>
+            <h3>milestone status<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/milestoneStatus</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e744"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Milestone">milestone</a><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e295" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/milestoneTitle"></a>
+            <h3>milestone title<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/milestoneTitle</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e744"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Milestone">milestone</a><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e305" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/presentationDate"></a>
+            <h3>presentation date<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/presentationDate</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e651"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Final_Presentation">final
+                            presentation</a><sup title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e314" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/presenterName"></a>
+            <h3>presenter name<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/presenterName</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e651"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Final_Presentation">final
+                            presentation</a><sup title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e323" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/projectDescription"></a>
+            <h3>project description<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/projectDescription</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e523"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Capstone_project">capstone
+                            project</a><sup title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e333" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/projectEndDate"></a>
+            <h3>project end date<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/projectEndDate</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e523"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Capstone_project">capstone
+                            project</a><sup title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e342" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/projectStartDate"></a>
+            <h3>project start date<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/projectStartDate</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e523"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Capstone_project">capstone
+                            project</a><sup title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e351" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/projectTitle"></a>
+            <h3>project title<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/projectTitle</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e523"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Capstone_project">capstone
+                            project</a><sup title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e361" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/proposalStatus"></a>
+            <h3>proposal status<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/proposalStatus</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e859"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Proposal">proposal</a><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e370" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/prsentationScore"></a>
+            <h3>prsentation score<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/prsentationScore</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e651"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Final_Presentation">final
+                            presentation</a><sup title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e379" class="entity"><a name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/remarks"></a>
+            <h3>remarks<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/remarks</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e622"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Evaluation_Criteria">evaluation
+                            criteria</a><sup title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e389" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/reportDate"></a>
+            <h3>report date<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/reportDate</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e824"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Project_Report">project
+                            report</a><sup title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e398" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/reportTitle"></a>
+            <h3>report title<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/reportTitle</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e824"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Project_Report">project
+                            report</a><sup title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e407" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/reportVersion"></a>
+            <h3>report version<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/reportVersion</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e824"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Project_Report">project
+                            report</a><sup title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e417" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/startDate"></a>
+            <h3>start date<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/startDate</p>
+            <div class="description">
+                <dl>
+                    <dt>has sub-properties</dt>
+                    <dd><a href="#d4e491"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/version">version</a><sup
+                            title="data property" class="type-dp">dp</sup></dd>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e972"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Timeline">timeline</a><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e426" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/studentID"></a>
+            <h3>student i d<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/studentID</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e913"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Students">students</a><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e435" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/studentName"></a>
+            <h3>student name<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/studentName</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e913"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Students">students</a><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e445" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/submissionDate"></a>
+            <h3>submission date<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/submissionDate</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e859"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Proposal">proposal</a><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e454" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/supervisorName"></a>
+            <h3>supervisor name<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/supervisorName</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e920"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Supervisor">supervisor</a><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e463" class="entity"><a name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/techName"></a>
+            <h3>tech name<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/techName</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e935"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Technology_Used">technology
+                            used</a><sup title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e473" class="entity"><a name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/techType"></a>
+            <h3>tech type<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/techType</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e935"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Technology_Used">technology
+                            used</a><sup title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e482" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/uploadDate"></a>
+            <h3>upload date<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/uploadDate</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e607"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Documentation">documentation</a><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e491" class="entity"><a name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/version"></a>
+            <h3>version<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/version</p>
+            <div class="description">
+                <dl>
+                    <dt>has super-properties</dt>
+                    <dd><a href="#d4e417"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/startDate">start
+                            date</a><sup title="data property" class="type-dp">dp</sup></dd>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e935"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Technology_Used">technology
+                            used</a><sup title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e503" class="entity"><a
+                name="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/versionNumber"></a>
+            <h3>version number<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/hp/ontologies/2025/3/capstone/versionNumber</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><a href="#d4e607"
+                            title="http://www.semanticweb.org/hp/ontologies/2025/3/capstone/Documentation">documentation</a><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</span></dd>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div id="namespacedeclarations">
+        <h2>Namespace Declarations <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+        <dl>
+            <dt><em>default namespace</em></dt>
+            <dd>http://www.semanticweb.org/hp/ontologies/2025/3/capstone/</dd>
+            <dt>3</dt>
+            <dd>http://www.semanticweb.org/hp/ontologies/2025/3/</dd>
+            <dt>owl</dt>
+            <dd>http://www.w3.org/2002/07/owl#</dd>
+            <dt>rdf</dt>
+            <dd>http://www.w3.org/1999/02/22-rdf-syntax-ns#</dd>
+            <dt>rdfs</dt>
+            <dd>http://www.w3.org/2000/01/rdf-schema#</dd>
+            <dt>xsd</dt>
+            <dd>http://www.w3.org/2001/XMLSchema#</dd>
+        </dl>
+    </div>
+    <p class="endnote">This HTML document was obtained by processing the OWL ontology source code through <a
+            href="http://www.essepuntato.it/lode">LODE</a>, <em>Live OWL Documentation Environment</em>, developed by <a
+            href="http://www.essepuntato.it">Silvio Peroni</a>
+        .
+    </p>
+</body>
+
+</html>
